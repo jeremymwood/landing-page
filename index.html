@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;400;700&family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"-->
-<!--          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4d0b40d330.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    <header>
+    <header class="d-flex flex-column mb-0">
         <div class="dark-header grid">
             <div class="content">
                 <div class="brand-row">
@@ -28,7 +28,7 @@
         <div class="dark-header-divider"></div>
         <div class="light-header grid">
             <div class="content">
-                <form class="email-form" action="/email" method="post">
+                <form class="email-form" action="./email.html" method="post">
                     <input type="email" name="email" placeholder="Enter Email"></input>
                     <button type="submit">Join Now!</button>
                 </form>
@@ -36,6 +36,19 @@
         </div>
         <div class="light-header-divider"></div>
     </header>
+    <main class="mb-auto">
+        <section class="grid grid-video">
+            <video controls><source src="videos/sunset.mp4" type="video/mp4"></video>
+            <div class="benefits-section">
+                <div class="benefit">
+                    <img src="images/paper-plane-solid.svg" alt="email icon">Special Discounts</div>
+                <div class="benefit">
+                    <img src="images/sack-dollar-solid.svg" alt="email icon"></div>
+                <div class="benefit">
+                    <img src="images/file-circle-plus-solid.svg" alt="email icon">Exclusive Discounts</div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/jquery-3.6.3.js"></script>
     <script src="js/script.js"></script>
