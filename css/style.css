@@ -1,3 +1,7 @@
+:root {
+    --dark: #333333;
+    --grey: #6d6c6c;
+}
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -19,13 +23,13 @@ body {
     width: 100%;
 }
 .dark-header {
-    background-color: #333333;
+    background-color: var(--dark);
     color: white;
     position: relative;
     z-index: 1;
 }
 .light-header {
-    background-color: #6d6c6c;
+    background-color: var(--grey);
     color: white;
     padding-top: 500px;
     margin-top: -750px;
@@ -37,7 +41,7 @@ body {
     align-items: center;
 }
 .logo {
-    width: 50px;
+    width: 30px;
     margin-right: .5em;
     color: white;
     fill: white;
@@ -77,6 +81,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*margin: 1em auto 0 auto;*/
     top: -20px;
+    font-size: 1.25em;
+}
+.email-form input {
+    background-color: rgba(255,255,255,.20);
+    color: white;
+    border: 2px solid white;
+    border-radius: .25em;
+    padding: .25em .5em;
+    margin-right: 1em;
+    outline: none;
+    flex-grow: 1;
+}
+.email-form input:focus {
+    background-color: rgba(255,255,255,.30);
+}
+.email-form input::placeholder {
+    color: white;
+}
+.email-form button {
+    background-color: var(--dark);
+    color: white;
+    border: 2px solid white;
+    border-radius: .25em;
+    padding: .25em .5em;
+    max-width: 250px;
+    cursor: pointer;
+    /*outline: none;*/
+    /*flex-grow: 1;*/
+}
+.email-form button:hover {
+    background-color: rgba(51,51,51,.7);
+    scale: 1.05;
 }
